@@ -1,2 +1,2 @@
 # azCopyFolderToSAContainer
-azcopy and powershell code 
+This Powershell script copy folders with azcopy from local Azure VM path to StorageAccount container. The VM in Azure need to use managed identity and have blob/storage permission to StorageAccount for azcopy to work. The script use azcopy with SAS key to authenticate. Before running script, update the following variable: SubscriptionId, ResourceGroup, StorageAccount, PathToFolder and SASKey. How to run the script: .\azCopyFolderToContainer.ps1 FolderToCopy NewContainerToCreate ValueTag1 ValueTag2 ValueTag3
